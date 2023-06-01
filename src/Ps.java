@@ -1,5 +1,5 @@
 public class Ps {
-    public String processor;
+    public String processor;// інкапсуляція
     public String hdd;
     public String videoCard;
     public String ssd;
