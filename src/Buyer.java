@@ -1,6 +1,6 @@
  import java.util.Scanner;
 public class Buyer {
-    private String fname;
+    private String fname;// інкапсуляція
     private String lname;
     private long number;
     private String email;
@@ -63,7 +63,7 @@ public class Buyer {
 
 }
 
-class Delivery extends Buyer {
+class Delivery extends Buyer {//«Застосування наслідування. Робота з вкладеними та внутрішніми класами»
 
     public String delivery;
 
@@ -75,7 +75,7 @@ class Delivery extends Buyer {
         this.delivery = delivery;
     }
 
-    public void delivery() {
+    public void delivery() {                 //«Створення власних методів з довільною логікою»
         System.out.println("______Введіть ваші особисті дані_____");
         System.out.print("Електронна пошта: ");
         Scanner scanner = new Scanner(System.in);
@@ -110,7 +110,7 @@ class Delivery extends Buyer {
 
     }
 }
-class ConfirmationOfPurchase extends Delivery {
+class ConfirmationOfPurchase extends Delivery {//«Застосування наслідування. Робота з вкладеними та внутрішніми класами»
      public String name;
 
      public String getName() {
@@ -121,7 +121,7 @@ class ConfirmationOfPurchase extends Delivery {
          this.name = name;
      }
 
-     void confirmation(){
+     void confirmation(){    //«Створення власних методів з довільною логікою»
          System.out.println("--------------Підтвердіть покупку-------------");
          System.out.println("Компютер: " + name);
          System.out.println("підтвердження: 1)Так 2)Ні");
